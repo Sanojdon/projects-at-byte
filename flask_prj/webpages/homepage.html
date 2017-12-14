@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Page</title>
+    <style>
+      body{
+        background-color: #7dec9a;
+        text-align: center;
+        color: #120e4d;
+      }
+      .navigate{
+        text-align: left;
+        float: left;
+        border: 2px solid green;
+        padding: 30px;
+        list-style: none;
+      }
+      .navigate li a{
+        color: #992193;
+        text-decoration: none;
+      }
+      .navigate li a:hover{
+        font-weight: bold;
+        color: red;
+      }
+      .frames{
+        float: left;
+        margin-left: 20px;
+        margin-top: 16px;
+        height: 530px;
+        width: 1015px;
+        border: none;
+      }
+      h2{
+        font-size: 40px;
+        padding: 20px;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>{{ name }}</h2>
+    <p>Here you can do a lot of things.. Buying and selling shares have not been this easy right.. Happy Sharing!!</p>
+    <ul class="navigate">
+      <li><a href="/view_portfolio?uid={{ uid }}" target="window">View Your Portfolio</a></li>
+      <li><a href="/buy_sell?uid={{ uid }}&status=Buy" target="window">Buy Shares</a></li>
+      <li><a href="/buy_sell?uid={{ uid }}&status=Sell" target="window">Sell Shares</a></li>
+      <li><a href="/company?action=search" target="window">Company Search</a></li>
+      <li><a href="/company?action=quote" target="window">Get Quote</a></li>
+      <li><a href="/">Logout</a></li>
+    </ul>
+    <iframe class="frames" name="window" id="window">
+      <p>iframes are not supported by your browser</p>
+    </iframe>
+    </body>
+</html>

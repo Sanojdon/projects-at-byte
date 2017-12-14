@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transaction</title>
+    <style>
+      body{
+        background-color: #00aaf3;
+        text-align: center;
+      }
+      .title{
+        padding: 20px;
+      }
+      input{
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>{{ status }}ing Shares</h2>
+    <form action="/{{ status }}" method="POST">
+      <input type=number name="uid" value="{{ uid }}" style="display: none;">
+      <div class="title">Enter the company symbol :</div>
+      <input type="text" name="comp_sym"><br>
+      <div class="title">Enter the number of shares :</div>
+      <input type="number" name="number"><br>
+      <input type="submit" value={{ status }} />
+    </form>
+  </body>
+</html>

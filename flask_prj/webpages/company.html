@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Company Details</title>
+    <style>
+      body{
+        background-color: #130e22;
+        text-align: center;
+        color: #e1e1e1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Company Details</h1>
+    {% if action == 'search': %}
+    Enter the company name you want to search : 
+    {% else: %}
+    Enter the company symbol you want to search : 
+    {% endif %}
+    <form action="/{{ action }}" method="POST">
+    <input type="text" name="name" />
+    <input type="submit" name="submit" value="{{ action.title() }}">
+    </form>
+  </body>
+</html>
