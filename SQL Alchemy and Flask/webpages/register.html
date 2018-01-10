@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Starting Page</title>
+		<style>
+			body{
+				text-align: center;
+				background-color: #3a0a3f;
+				color: #bcbcbc;
+			}
+			h1{
+				color: #b1defb;
+			}
+			.register{
+				background-color: #ffffa4;
+				color: #a50606;
+				padding: 10px 20px 20px 20px;
+				margin-left: 400px;
+				margin-bottom: 10px;
+			}
+			a{
+				color: yellow;
+				text-decoration: none;
+			}
+			a:hover{
+				font-weight: bold;
+			}
+			.register td{
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Welcome to Online Trade Depo</h1>
+		<form action="" method="POST">
+		<table class="register">
+			<tr>
+				<td colspan="2">Register Now</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="usr_name" /></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input type="number" name="usr_age" /></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="text" name="usr_phone" /></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><textarea name="usr_address">Enter your address..</textarea></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="usr_email" /></td>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="usr_user_name" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="usr_password" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" name="submit" value="Register" /><td>
+			</tr>
+		</table>
+		</form>
+		To login <a href="/login">click here</a>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      body{
+          text-align: center;
+          background-color: #092a09;
+          color: #ea8181;
+        }
+      .login{
+        background-color: #56b42d;
+				margin-left: 450px;
+				color: black;
+				padding: 20px;
+      }
+      .login td{
+      	padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Online Trade Depo</h1>
+    <form method="POST" action="/login">
+		<table class="login">
+			<tr>
+				<td colspan="2">Login Please</td>
+			</tr>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="usr_user_name" /> </td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="usr_password" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" name="login" value="Log In" /></td>
+			</tr>
+		</table>
+		</form>
+  </body>
+</html>
