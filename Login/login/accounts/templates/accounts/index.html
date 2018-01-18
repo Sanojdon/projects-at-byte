@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In Details</title>
+    <link rel="stylesheet" href="static/css/base.css" />
+  </head>
+  <body>
+    {% load static %}
+    <!-- <img src="{% static "accounts/thanos.jpg" %}" alt="My Image" /> -->
+    <h1>This is the title</h1>
+
+    <form action="details/" method="POST">
+      Username :
+      <input type="text" name="txtUname" /><br />
+      Password :
+      <input type="password" name="txtPword" /><br />
+      <input type="submit" name="btnSubmit" value="Login" />
+
+      <img id="qrious">
+
+      <script src="static/js/dist/qrious.js"></script>
+      <script>
+        (function() {
+          var $value = document.querySelector('main form [name="value"]');
+          var qr = window.qr = new QRious({
+          element: document.getElementById('qrious'),
+          size: 250,
+          value: 'otpauth://totp/Koinrex:sanoj.mv.93%40gmail.com?issuer=Koinrex&secret=JBSWY3DPEHPK3PXP'
+          });
+          })();
+</script>
+
+    </form>
+  </body>
+</html>
